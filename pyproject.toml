@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atv-seq"
+version = "0.1.0"
+description = "Execute command sequences on Apple TV via pyatv"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Byamo"}
+]
+dependencies = ["pyatv"]
+
+[project.urls]
+Homepage = "https://github.com/byamo/atv-seq"
+Repository = "https://github.com/byamo/atv-seq"
+
+[project.scripts]
+atv-seq = "atv_seq.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["atv_seq*"]

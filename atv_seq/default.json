@@ -1,0 +1,10 @@
+{
+  "name": "Skip End Credits",
+  "description": "Select, Up, Right, Select - typical next episode sequence",
+  "steps": [
+    {"action": "select", "delay": 0.5},
+    {"action": "up", "delay": 0.3},
+    {"action": "right", "delay": 0.3},
+    {"action": "select", "delay": 0}
+  ]
+}
